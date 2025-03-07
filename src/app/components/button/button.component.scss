@@ -7,4 +7,12 @@
   font-weight: bold;
   padding: 10px;
   border: none;
+
+  &--white {
+    background-color: white;
+  }
+
+  &--purple {
+    background-color: #a056d9;
+  }
 }
