@@ -7,6 +7,8 @@
   font-weight: bold;
   padding: 10px;
   border: none;
+  cursor: pointer;
+  position: relative; //como relative é possivel criar a animação de pressionar o botão
 
   &--white {
     background-color: white;
@@ -14,5 +16,9 @@
 
   &--purple {
     background-color: #a056d9;
+  }
+
+  &:active {
+    bottom: -2px; //usado para animação de pressionar o botao
   }
 }

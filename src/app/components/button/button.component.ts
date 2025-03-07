@@ -12,6 +12,9 @@ export class ButtonComponent {
   @Input({ required: true, alias: 'style' })
   buttonStyle: 'white' | 'purple' = 'white';
 
+  @Input({ alias: 'disabled' })
+  isDisabled: boolean = false;
+
   @Output('clicked') buttonClickedEmmit = new EventEmitter<void>();
   onButtonClicked() {
     this.buttonClickedEmmit.emit();
